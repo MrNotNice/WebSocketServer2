@@ -6,8 +6,8 @@
       var socket = io("https://websocket-server-2018.herokuapp.com");
       var el = document.getElementById('server-time');
 
-      socket.on('time', function(timeString) {
-        el.innerHTML = 'Server time: ' + timeString;
+      socket.on('beaconData', function(beaconData) {
+        console.log(beaconData);
       });
     </script>
   </body>

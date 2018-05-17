@@ -3,6 +3,7 @@
 const express = require('express');
 const socketIO = require('socket.io');
 const path = require('path');
+var beaconData = "Testas";
 
 const PORT = process.env.PORT || 3000;
 const INDEX = path.join(__dirname, 'index.html');
@@ -18,4 +19,4 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
 
-setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
+setInterval(() => io.emit('beaconData', beaconData, 1000);
