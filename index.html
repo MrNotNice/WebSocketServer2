@@ -4,10 +4,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
     <script>
       var socket = io("https://websocket-server-2018.herokuapp.com");
-      var el = document.getElementById('server-time');
+
       //Jei norima išsiųsti informacija ji turi būti apibrėžta taip:
-      var beaconData = ["Saab", "Volvo", "BMW"];
-      socket.emit('message', JSON.stringify(beaconData));
+      //var beaconData = [300, 400, 350];
+      //socket.emit('message', JSON.stringify(beaconData));
       //
       //
       //Jei informacija priimama:
