@@ -22,4 +22,4 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
 
-setInterval(() => io.emit('beaconData', beaconData), 2500);
+setInterval(() => io.emit('beaconData', beaconData), 500);
