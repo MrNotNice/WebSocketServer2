@@ -1,5 +1,5 @@
 
-#Websocket Server
+# Websocket Server
 
 A server that can receive String type messages and transfer them to every device that is connected to it. In order to receive server message device needs to be connected to the server and listening to messages. 
 
