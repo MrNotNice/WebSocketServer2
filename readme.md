@@ -20,7 +20,7 @@ In order to get this example you need to downlond it or copy the git link in you
 
 git clone https://github.com/MrNotNice/WebSocketServer2.git
 
-To launch the server localy:
+#### To launch the server localy:
   1. In Terminal/cmd, enter:
   
       cd path/to/servers/folder
@@ -35,7 +35,7 @@ To launch the server localy:
       
       In this webpages console you can see all the information that is being transmited using server.
      
-### To atatch the server to web application:
+#### To atatch the server to web application:
 
   In order to connect to server you need to create a script with variable.
   this variable needs to have value of io() if you are runing the server localy.
