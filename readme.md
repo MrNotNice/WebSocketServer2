@@ -56,6 +56,15 @@ git clone https://github.com/MrNotNice/WebSocketServer2.git
       socket.on('beaconData', function(beaconData) {
         console.log(JSON.parse(beaconData));
 
+### Modification
+
+To modify the server you need to open the server.js file.
+It contains the main server functionality.
+
+If you need a specific data to be sent you can modify the index.html.
+When the server is launched it also launches the index page.
+You can also use it as starting example for servers testing.
+
 
 ## Deployment
 
