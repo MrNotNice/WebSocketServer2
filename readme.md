@@ -38,9 +38,7 @@ git clone https://github.com/MrNotNice/WebSocketServer2.git
      
 #### To attach the server to the web application:
 
-  In order to connect to the server, you need to create a script with a variable.
-  this variable needs to have a value of io() if you are running the server locally.
-  if the server is being hosted value is io("full host address").
+  In order to connect to the server, you need to create a script with a variable. This variable needs to have a value of io() if you are running the server locally. If the server is being hosted value is io("full host address").
   
       var socket = io("https://websocket-server-2018.herokuapp.com");
 
@@ -50,20 +48,16 @@ git clone https://github.com/MrNotNice/WebSocketServer2.git
       socket.emit('message', JSON.stringify(beaconData));
       
 
-   The following method receives messages that are named beaconData.
-   Then the message is converted to object and printed out to console.
+   The following method receives messages that are named beaconData. Then the message is converted to object and printed out to console.
    
       socket.on('beaconData', function(beaconData) {
         console.log(JSON.parse(beaconData));
 
 ### Modification
 
-To modify the server you need to open the server.js file.
-It contains the main server functionality.
+To modify the server you need to open the server.js file. It contains the main server functionality.
 
-If you need a specific data to be sent you can modify the index.html.
-When the server is launched it also launches the index page.
-You can also use it as starting example for servers testing.
+If you need a specific data to be sent you can modify the index.html. When the server is launched it also launches the index page. You can also use it as starting example for testing.
 
 
 ## Deployment
