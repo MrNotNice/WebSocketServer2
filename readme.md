@@ -35,7 +35,7 @@ To launch the server localy:
       
       In this webpages console you can see all the information that is being transmited using server.
      
-To atatch the server to web application:
+### To atatch the server to web application:
 
   In order to connect to server you need to create a script with variable.
   this variable needs to have value of io() if you are runing the server localy.
