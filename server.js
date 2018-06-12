@@ -20,12 +20,12 @@ const io = socketIO(server);
 io.on('connection', (socket) => {
   console.log('Client connected');
 
-  //when a message is recived it's data is to beaconData variable
+  //when a message is recived it's data is given to beaconData variable
   socket.on('message', function(data){
     beaconData = data ;
   });
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
 
-// in set time interval every client that is connected to server recieves message with beaconData value
+// in set intervals every client that is connected to server recieves message with beaconData value
 setInterval(() => io.emit('beaconData', beaconData), 500);
