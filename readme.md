@@ -32,9 +32,9 @@ To launch the server localy:
      
 To atatch the server to web application:
 
-   In order to connect to server you need to create a script with variable.
-   this variable needs to have value of io() if you are runing the server localy
-   if the server is being hosted value is io("full host adress")
+  In order to connect to server you need to create a script with variable.
+  this variable needs to have value of io() if you are runing the server localy.
+  if the server is being hosted value is io("full host adress").
       var socket = io("https://websocket-server-2018.herokuapp.com");
 
    The following is a example of sending message with array to the server:
@@ -42,8 +42,8 @@ To atatch the server to web application:
       socket.emit('message', JSON.stringify(beaconData));
       
 
-   The following method recives messages that are named beaconData
-   Then the message is converted to object and printed out to console
+   The following method recives messages that are named beaconData.
+   Then the message is converted to object and printed out to console.
       socket.on('beaconData', function(beaconData) {
         console.log(JSON.parse(beaconData));
 
