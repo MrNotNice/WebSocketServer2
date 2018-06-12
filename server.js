@@ -14,12 +14,14 @@ const server = express()
 
 const io = socketIO(server);
 
+//Method that reacts to connctions to server
 io.on('connection', (socket) => {
   console.log('Client connected');
+  //when a message is recived it's data is to beaconData variable
   socket.on('message', function(data){
     beaconData = data ;
   });
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
-
+// in set time interval every client that is connected to server recieves message with beaconData value
 setInterval(() => io.emit('beaconData', beaconData), 500);

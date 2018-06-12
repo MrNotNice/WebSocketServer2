@@ -3,14 +3,19 @@
     <p id='server-time'></p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
     <script>
+
+      //In order to connect to server yuo need to create a variable
+      //this variable needs to have value of io() if you are runing the server localy
+      //if the server is being hosted value is io("full host adress")
       var socket = io("https://websocket-server-2018.herokuapp.com");
 
-      //Jei norima išsiųsti informacija ji turi būti apibrėžta taip:
+      //The following is a example of sending message with array to the server:
       //var beaconData = [300, 400, 350];
       //socket.emit('message', JSON.stringify(beaconData));
-      //
-      //
-      //Jei informacija priimama:
+      
+
+      //The following method recives messages that are named beaconData
+      //Then the message is converted to object and printed out to console
       socket.on('beaconData', function(beaconData) {
         console.log(JSON.parse(beaconData));
       });
